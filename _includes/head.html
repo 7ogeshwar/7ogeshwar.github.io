@@ -163,7 +163,7 @@
 
   {% assign favicon_exists = site.static_files | where: "path", "/favicon.png" | size %}
   {% if favicon_exists == 1 %}
-  <link rel="icon" href="{{ '/assets/img/favicon.png' | relative_url }}" />
+  <link rel="icon"  type="image/png"  href="{{ '/assets/img/favicon.png' | relative_url }}" />
   {% endif %}
 
   {% if page.head-extra %}
